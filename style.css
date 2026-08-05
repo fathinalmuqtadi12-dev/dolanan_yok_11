@@ -1,0 +1,809 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*animasi*/
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(60px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes turunDariAtas{
+
+    from{
+        opacity:0;
+        transform:translateY(-100px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes slidemasuk {
+    from{
+        opacity: 0;
+        transform: translateX(80px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slidekeluar {
+
+    from{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+    to{
+        opacity:0;
+        transform:translateX(-80px);
+    }
+
+}
+
+.animasiMasuk {
+    animation: slidemasuk .3s ease;
+}
+.animasikeluar {
+    animation: slidekeluar .3s ease;
+}
+.judul_dy {
+                font-family: 'Soft Marshmallow', sans-serif;
+                text-align: left;
+                font-size: 50px;
+            } 
+            
+            .hero-bg {
+                max-width: 100%;
+                height: auto;
+            }
+
+
+   /*background*/
+body{
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+
+    background:url("assets/HERO/BACKGROUND.png") no-repeat top center;
+    background-size:100% auto;
+}
+        
+/*navbar woe */
+header {
+    position:fixed;
+
+    top:16px;
+    left:0;
+
+    width:100%;
+
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    z-index:9999;
+}
+.navbar {
+    position: relative;
+    font-family: 'Soft Marshmallow', sans-serif;
+    display: flex;
+    width: 40%;
+    max-width: 800px;
+    height: 50px;
+    background: white;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+     box-shadow: 10px 10px 12px rgba(0 ,0, 0, 0.4);
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+     animation:turunDariAtas 1.2s ease-out forwards;
+
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: -40px;
+}
+
+.hamburger {
+    position: absolute;
+    display: none;
+    width: 50px;
+    top: 50%;
+    right: 80px;
+}
+
+.nav-menu a {
+    color:black;
+     transition: all 0.3s ease;
+     text-decoration: none;
+}
+.nav-menu :hover {
+    color: #ff3a3a;
+    transform: scale(1.12);
+}
+.nav-menu :active {
+    transform: scale(1);
+}
+.navbar ul {
+    display: flex;
+    gap: 40px; 
+    list-style-type: none;
+}
+
+
+/*tulisan DY*/
+.tulisanDY {
+    width:75%;
+    max-width:1600px;
+    margin-bottom: 20px;
+    animation:fadeUp 2.5s ease forwards;
+}
+.tulisanDY:hover {
+    transform:scale(1.08);
+}
+.selamat_datangg {
+    width:50%;
+    max-width:1500px;
+    padding:1% 1%;
+    padding-top: 12px;
+    height:auto;
+    background: linear-gradient(to right, #ff3a3a, #ffc400);
+    border-radius: 80px;
+    font-size:30px;
+    color:white;
+    margin-bottom:10px;
+     font-family: 'Fredoka', sans-serif;
+     box-shadow: 10px 10px 12px rgba(0 ,0, 0, 0.4);
+     animation:fadeUp 3s ease forwards;
+}
+
+/*bagian atas*/
+
+.bagian_atas {
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+}
+/*apa itu dy*/
+
+.ApaItuDY {
+    margin-top: 500px;
+    text-align: center;
+}
+.apa_itu_dy {
+     font-family: 'Soft Marshmallow', sans-serif;
+     font-size: 100px;
+     color: white;
+    text-shadow: 5px 5px 8px rgba(0,0,0,0.6);
+}
+.tulisanee {
+    color: #fab43c;
+  
+}
+.penjelasan {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/*video ne*/
+
+.videooo{
+    margin-top: -50px;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Tombol Play */
+
+.playbutton{
+    width:120px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.playbutton img:hover{
+    transform:scale(1.12);
+}
+
+/* Popup */
+
+.video-popup{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.75);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+}
+
+/* Video */
+
+.video-popup video{
+    width:80%;
+    max-width:900px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.4);
+}
+
+/* Tombol Close */
+
+.video-popup span{
+
+    position:absolute;
+    top:30px;
+    right:40px;
+    color:white;
+    font-size:50px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.video-popup span:hover{
+    transform:scale(1.2);
+}
+
+
+/*testimoni*/
+
+.testimoni-section{
+    text-align:center;
+    margin-top:250px;
+}
+.judul-testimoni {
+    color: #fab43c;
+     font-family: 'Soft Marshmallow', sans-serif;
+     font-size: 60px;
+     text-shadow: 5px 5px 8px rgba(0,0,0,0.6);
+}
+
+.card-testimoni{
+    max-width:900px;
+    margin:auto;
+
+}
+
+.avatar{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:30px;
+    margin-top: -10px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.8);
+    transition: 0.2s ease;
+
+}
+
+.avatar:hover {
+    transform: scale(1.15);
+}
+
+.text-testimoni{
+    font-size:20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.author{
+    margin-top:25px;
+    font-size:28px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+}
+
+.job{
+    font-size:22px;
+    font-style:italic;
+    margin-top: 20px;
+}
+
+.tombol-testimoni{
+    margin-top:40px;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+
+}
+
+.tombol-testimoni button{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    border:2px solid black;
+    background: none;
+    cursor:pointer;
+    font-size:15px;
+    transition:.3s;
+
+}
+
+.tombol-testimoni button:hover{
+    background:#fab43c;
+    color:white;
+    border: 2px solid #fab43c;
+     transform:scale(1.15);
+
+}
+
+.tombol-testimoni button:active {
+    transform: scale(1.35);
+}
+
+/*gabungg*/
+
+.gabung {
+    margin-top: 55%;
+    text-align: center;
+}
+
+.gabung-bersama {
+     font-family: 'Soft Marshmallow', sans-serif;
+     font-size: 70px; 
+     color: #ff3a3a;
+    text-shadow: 5px 10px 10px rgba(0,0,0,0.60);
+}
+.kami-yuk {
+     font-family: 'Soft Marshmallow', sans-serif;
+     font-size: 70px;
+     color: #fab43c;
+     margin-top: 50px;
+        text-shadow: 5px 10px 10px rgba(0,0,0,0.4);
+}
+.gabung-grup {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 60px;
+    height: 400px;
+    text-align: center;
+    gap: 50px;
+}
+
+.gabung-grup h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;   
+}
+
+.gabung-grup p {
+    margin-top: 100px;
+  
+}
+
+.gabung-peserta {
+    background-color: #fab43c;
+    margin-right: 5px;
+    width: 400px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #ff3a3a, #ffcf6a);
+     box-shadow: 10px 10px 10px rgba(0,0,0,0.50);
+}
+
+.gabung-peserta img {
+    margin-top: -30px;
+    width: 100px;
+    height: 100px;
+}
+
+.gabung-peserta p {
+     font-family:'Poppins';
+    width: 300px;
+     margin-left: 50px;
+     font-size: 20px;
+     margin-top: 30px;
+}
+.daftar-sekarang {
+    text-decoration: none;
+    border: 2px solid #ff3a3a;
+    padding: 10px 30px;
+    color: black;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+.daftar-sekarang:hover {
+    transform: scale(1.09);
+    background-color: #ff3a3a;
+    color: white;
+}
+.daftar-sekarang:active {
+    transform: scale(1.15);
+}
+
+.gabung-mitra img {
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.gabung-mitra h1 {
+    margin-top: -10px;
+}
+
+.gabung-mitra p{
+     font-family:'Poppins';
+     width: 300px;
+     margin-left: 50px;
+     font-size: 20px;
+     margin-top: 30px;
+}
+.gabung-mitra {
+    background-color: #fab43c;
+    margin-left: 5px;
+    width: 400px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #f8b13c, #ff3a3a);
+     box-shadow: 10px 10px 10px rgba(0,0,0,0.50);
+}
+
+/*  GALLERY */
+
+.gallery{
+    width:100%;
+    margin-top:10%;
+    text-align:center;
+    overflow: hidden;
+}
+
+.tulisan_galery{
+    font-family:'Soft Marshmallow',sans-serif;
+    font-size:70px;
+    color:#ffc400;
+    margin-bottom:40px;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.70);
+}
+
+/* Container */
+
+.gallery-track{
+    width:90%;
+    margin:auto;
+    display:flex;
+    gap:25px;
+    overflow-x:hidden;
+    scroll-behavior:auto;
+    user-select:none;
+    cursor:grab;
+}
+
+.gallery-track:active{
+    cursor:grabbing;
+}
+
+/* Card */
+
+.gambar{
+    flex:0 0 320px;
+    height:420px;
+    overflow:hidden;
+    border-radius:22px;
+    box-shadow:0 18px 40px rgba(0,0,0,.18);
+    transition:.35s ease;
+}
+
+.gambar:hover{
+    transform:translateY(-10px);
+}
+
+.gambar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.4s ease;
+}
+
+.gambar:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* Tombol */
+
+.gallery-wrapper{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+    margin-top:35px;
+
+}
+
+.gallery-btn{
+
+    width:40px;
+
+    height:40px;
+
+    border-radius:50%;
+
+    border:2px solid black;
+
+    background:none;
+
+    font-size:10px;
+
+    cursor:pointer;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.18);
+
+    transition:.25s;
+
+}
+
+.gallery-btn:hover{
+
+    background:#ff3a3a;
+
+    color:white;
+     border:2px solid #ff3a3a;
+
+
+    transform:scale(1.12);
+
+}
+.gallery-btn:active {
+    transform: scale(1);
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.gambar{
+
+    flex:0 0 250px;
+
+    height:340px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.gambar{
+
+    flex:0 0 200px;
+
+    height:280px;
+
+}
+
+.tulisan_galery{
+
+    font-size:50px;
+
+}
+
+}
+
+/*sosmed*/
+
+.social_media {
+    align-items: center;
+    margin-top: 120px;
+}
+
+.tulisan-sosmed {
+    font-family:'Soft Marshmallow',sans-serif;
+    font-size: 70px;
+    filter: drop-shadow(2px 5px rgba(0, 0, 0, 0.45));
+   background: linear-gradient(to right, orange, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.logo_sosmed {
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    gap: 50px;
+}
+.logo_sosmed img {
+    width: 90px;
+    height: 90px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    border: 5px solid black;
+    border-radius: 20px;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+.logo_sosmed img:hover{
+    transform:scale(1.15);
+    background: linear-gradient(to right, #ff3a3a, #fab43c);
+}
+.logo_sosmed img:active {
+    transform: scale(1);
+}
+
+/*contact us*/
+.contact-us {
+    width: 50%;
+    max-width:1000px;
+    margin:200px auto;
+    margin-top: 100px;
+    background: white;
+    border: 3px solid black;
+    border-radius:35px;
+    padding:50px;
+    padding-top: 20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+    }
+
+.contact-us h1{
+    text-align:center;
+    font-family:'Soft Marshmallow',sans-serif;
+    font-size:60px;
+      background: linear-gradient(135deg, #ff3a3a, #ff9900);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+    color:transparent;
+    text-shadow: 5px 5px 5px rgba(0.0.0.0,50);
+}
+
+.grup_contact{
+    display: flex;
+    flex-direction: column;   
+    align-items: center;     
+    gap: 30px;
+    margin-top: 40px;
+}
+.whatsapp,
+.email{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    width: fit-content;
+}
+.grup_contact a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    text-decoration: underline;
+    color: black;
+}
+
+.whatsapp img{
+    width:90px;
+    height:90px;
+}
+.hubungi-kami {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    transition: 0.3s ease;
+}
+.hubungi-kami:hover {
+
+    color: #ff3a3a;
+}
+.email img {
+     width:90px;
+    height:90px;
+}
+
+
+.btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Dimmed Full-Screen Overlay (Hidden by Default) */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none; /* Disables clicking anything inside while hidden */
+  transition: opacity 0.3s ease;
+}
+
+/* Pop-Up Box Content Window */
+.modal-box {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(0.7); /* Scale-down animation effect */
+  transition: transform 0.3s ease;
+}
+
+.modal-box h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.modal-box p {
+  margin-bottom: 20px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.modal-close-btn {
+  background-color: #dc3545;
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-size: 15px;
+  color: white;
+}
+
+.modal-close-btn:hover {
+  background-color: #bd2130;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-overlay.active .modal-box {
+  transform: scale(1); 
+}

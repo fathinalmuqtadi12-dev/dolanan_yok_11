@@ -1,0 +1,352 @@
+@media (max-width:1285px){
+
+body{
+    background:url("assets/HERO/background-mobile.png") no-repeat top center;
+    background-size:cover;
+}
+
+.navbar{
+    width:100%;
+    height:70px;
+    background:transparent;
+    box-shadow:none;
+    justify-content:flex-end;
+}
+
+.navbar ul{
+    display:none;
+}
+
+.hamburger{
+    display:block;
+    position:fixed;
+    top:20px;
+    right:25px;
+    width:42px;
+    background:#ffc400;
+    border-radius:15px;
+    cursor:pointer;
+}
+
+.nav-menu{
+    display:none;
+    position:fixed;
+    top:70px;
+    right:20px;
+    width: 220px;
+    max-width: 90vw;
+    flex-direction:column;
+    background:white;
+    border-radius:20px;
+    padding:20px;
+    padding-left: 10px;
+    gap:20px;
+    box-sizing: border-box;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.nav-menu.active{
+    display:flex;
+    animation: turunDariAtas .5s ease;
+}
+
+.ApaItuDY{
+    margin-top:50px;
+}
+
+.gabung{
+    margin-top:250px;
+}
+
+.gallery{
+    margin-top:180px;
+}
+
+.social_media{
+    margin-top:180px;
+}
+
+.contact-us{
+    margin-top:120px;
+}
+
+.gabung {
+    margin-top: 1500px;
+}
+.gallery {
+    margin-top: 400px;
+}
+
+.contact-us {
+    margin-top: 300px;
+}
+}
+
+
+@media (max-width:992px){
+    .bagian_atas {
+        margin-top: -150px;
+    }
+    .selamat_datangg {
+        font-size: 20px;
+    }
+    .ApaItuDY h2 {
+        font-size: 50px;
+    }
+    .videooo img {
+        width: 90px;
+        margin-top: 40px;
+    }
+    .penjelasan {
+        font-size:17px ;
+    }
+    .testimoni-section h2 {
+        font-size: 40px;
+    }
+    .avatar {
+        width: 90px;
+        height: 90px;
+    }
+    .gabung {
+        margin-top: 1000px;
+    }
+}
+@media (max-width:768px){
+
+.bagian_atas{
+    margin-top:-150px;
+}
+
+.tulisanDY{
+    width:90%;
+}
+
+.selamat_datangg{
+    width:80%;
+    font-size:22px;
+}
+
+.apa_itu_dy{
+    font-size:60px;
+}
+
+.penjelasan{
+    margin:30px;
+    font-size:16px;
+}
+
+.playbutton{
+    width:70px;
+}
+
+.judul-testimoni{
+    font-size:45px;
+}
+
+.avatar{
+    width:120px;
+    height:120px;
+}
+
+.text-testimoni{
+    font-size:16px;
+}
+
+.author{
+    font-size:22px;
+}
+
+.job{
+    font-size:18px;
+}
+
+.gabung{
+    margin-top:500px;
+}
+
+.gabung-tulisan h1{
+    font-size:50px;
+}
+
+.gabung-grup{
+    flex-direction:column;
+    align-items:center;
+    height:auto;
+    gap:35px;
+}
+
+.gabung-peserta,
+.gabung-mitra{
+    width:85%;
+    max-width:360px;
+    height:auto;
+    padding:25px;
+}
+
+.gabung-peserta p,
+.gabung-mitra p{
+    width:100%;
+    margin:20px auto;
+}
+
+.gallery{
+    margin-top:120px;
+}
+
+.logo_sosmed{
+    gap:30px;
+}
+
+.contact-us{
+    width:80%;
+    padding:30px;
+}
+
+.contact-us h1{
+    font-size:45px;
+}
+
+.grup_contact a{
+    font-size:22px;
+}
+
+}
+
+@media (max-width:480px){
+
+.bagian_atas{
+    margin-top:-300px;
+}
+
+.tulisanDY{
+    width:95%;
+}
+
+.selamat_datangg{
+    width:90%;
+    font-size:14px;
+    padding-top:5px ;
+}
+
+.apa_itu_dy {
+    font-size:10px;
+    margin-top: -200px;
+}
+
+.penjelasan{
+    font-size:10px;
+    margin:20px;
+}
+
+.playbutton{
+    width:55px;
+    margin-top: 30px;
+}
+.testimoni-section {
+    margin-top: 10px;
+}
+
+.judul-testimoni{
+    font-size:30px;
+}
+
+.avatar{
+    width:80px;
+    height:80px;
+}
+
+.text-testimoni{
+    font-size:11px;
+}
+
+.author{
+    font-size:16px;
+}
+
+.job{
+    font-size:14px;
+}
+
+.gabung{
+    margin-top:300px;
+}
+
+.gabung-tulisan h1{
+    font-size:34px;
+}
+
+.gabung-peserta h1,
+.gabung-mitra h1{
+    font-size:20px;
+}
+
+.gabung-peserta p,
+.gabung-mitra p{
+    font-size:14px;
+}
+
+.gabung-peserta img,
+.gabung-mitra img{
+    width:70px;
+    height:70px;
+}
+
+.daftar-sekarang{
+    font-size:14px;
+}
+
+.tulisan_galery{
+    font-size:42px;
+}
+
+.gambar{
+    flex:0 0 180px;
+    height:240px;
+}
+
+.tulisan-sosmed{
+    font-size:42px;
+}
+
+.logo_sosmed img{
+    width:45px;
+    height:45px;
+    padding:20px;
+}
+
+.contact-us{
+    width:90%;
+    padding:20px;
+    margin-top: 300px;
+}
+.social_media {
+    margin-top: 200px;
+}
+
+.contact-us h1{
+    font-size:32px;
+}
+
+.grup_contact a{
+    font-size:16px;
+}
+
+.whatsapp img,
+.email img{
+    width:55px;
+    height:55px;
+}
+
+}
+
+@media (max-width:380px){
+    .bagian_atas {
+        margin-top: -210px;
+    }
+    .ApaItuDY h2 {
+        font-size: 30px;
+    }
+    .ApaItuDY p {
+        font-size: 10px;
+    }
+}
