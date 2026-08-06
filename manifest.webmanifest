@@ -1,0 +1,23 @@
+{
+  "name": "Festival Dolanan Yok! 11",
+  "short_name": "DolananYok11",
+  "description": "Website Resmi Festival Dolanan Yok! 11 - Festival Permainan Tradisional Terbesar oleh Pondok Pesantren Bayt Al-Hikmah Pasuruan.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ff3a3a",
+  "icons": [
+    {
+      "src": "assets/LOGO/LogoDY11.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/LOGO/LogoDY11.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ]
+}
