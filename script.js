@@ -55,7 +55,7 @@ const testimonials = [
 
 {
 
-    foto:"assets/testimoni/alissa_wahid.jpg",
+    foto:"assets/testimoni/alissa_wahid.webp",
 
     isi:"Selamat atas terlaksananya festival DolananYok! ini. Hebat sekali untuk Bayt Al-Hikmah, Pokoknya Top markotop deh.",
 
@@ -67,7 +67,7 @@ const testimonials = [
 
 {
 
-    foto:"assets/testimoni/Kyai_idris.jpg",
+    foto:"assets/testimoni/kyai_idris.webp",
 
     isi:"DolananYok! merupakan kegiatan yang sangat positif tentunya. Melatih diri untuk relaksasi dari kejenuhan belajar. Dan terjadi sosialisasi yang sangat luar biasa.",
 
@@ -79,7 +79,7 @@ const testimonials = [
 
 {
 
-    foto:"assets/testimoni/taj_yasin.png",
+    foto:"assets/testimoni/taj_yasin.webp",
 
     isi:"Saya Taj Yasin Maimoen, Wakil Gubernur jawa tengah, Mengapresiasi Pondok Pesantren Bayt Al-Hikmah yang mengajak para santri untuk kembali bermain dan melestarikan dolanan anak melalui Festival DolananYok!. Di tengah perkembangan zaman yang semakin didominasi oleh aktivitas digital, upaya ini menjadi langkah yang sangat positif dalam menghidupkan kembali permainan tradisional sebagai bagian dari warisan budaya. Mari bersama-sama kita lestarikan dolanan anak untuk generasi masa depan.",
 

@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  landing-page:
+    build: .
+    container_name: dolanan_yok_landing
+    restart: always
+    ports:
+      - "80:80"
+    environment:
+      - NGINX_PORT=80

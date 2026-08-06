@@ -17,7 +17,7 @@
 }
 
 body {
-  background: url(../bahan/Vektor/bg/bg_lomba.png) no-repeat center top;
+  background: url(assets/Vektor/bg/bg_lomba.webp) no-repeat center top;
   background-size: cover;
   background-attachment: scroll;
   min-height: 100vh;
@@ -26,13 +26,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.bg .blp {
-  display: flex;
-  position: relative;
-  justify-content: ;
-  
-  height: ;
-}
+
 
 h1 {
   text-align: center;
@@ -122,7 +116,7 @@ h1 {
   body {
     padding-top: 200px;
     padding-bottom: 500px;
-    background-image: url(../bahan/Vektor/bg/bg_lomba-mobile.png);
+    background-image: url(assets/Vektor/bg/bg_lomba-mobile.webp);
   }
   .main-container {
     grid-template-columns: repeat(1fr);
@@ -297,7 +291,7 @@ h1 {
 }
 
 @media (max-width: 540px) {
-  body{background-image: url(../bahan/Vektor/bg/540-daftar.png);}
+  body{background-image: url(assets/Vektor/bg/540-daftar.webp);}
   .main-container {
     grid-template-columns: 1fr;
     gap: 60px;
